@@ -3,7 +3,11 @@ from ultralytics import YOLO
 
 if __name__ == '__main__':
     # Eğittiğin yeni sınıflandırma modelini yükle
-    model_yolu = r"C:\yusufuz2\runs\plantvillage_model\weights\best.pt"
+# Eski hatalı yol buydu: 'C:\\yusufuz2\\runs\\plantvillage_model\\weights\\best.pt'
+
+# Başına 'r' koyarak yeni güncel yolu yaz:
+    model_yolu = r"C:\yapraksagligi\yusufuz2\runs\plantvillage_model\weights\best.pt"
+    
     model = YOLO(model_yolu)
 
     # Kamerayı başlat
